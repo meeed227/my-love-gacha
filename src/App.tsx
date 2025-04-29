@@ -10,7 +10,7 @@ function App() {
     setMessage('');
 
     try {
-      const res = await fetch('http://localhost:8000/random');
+      const res = await fetch('https://lovebot-backend.onrender.com/random');
       const data: { message: string } = await res.json();
 
       setTimeout(() => {
